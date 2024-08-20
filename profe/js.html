@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>Sumar 2+5</p>
+<p id="p1">Suma:</p>
+<p id="p2">Resta:</p>
+<p id="p3">Multiplicacion:</p>
+<p id="p4">Division:</p>
+
+<button type="button" onclick="sumar(2,5,'+','p1')">Sumar</button>
+
+<button type="button" onclick="sumar(2,5,'-','p2')">Restar</button>
+
+<button type="button" onclick="sumar(2,5,'*','p3')">Multiplicar</button>
+
+<button type="button" onclick="sumar(2,5,'/','p4')">Dividir</button>
+
+<p id="listas"></p>
+
+
+<script>
+function sumar(a,b,op,et) {
+var res=0;
+
+if (op=='+')
+{
+	res=a+b;
+}
+if (op=='*')
+{
+	res=a*b;
+}
+if (op=='/')
+{
+	res=a/b;
+}
+
+if (op=='-')
+{
+	res=a-b;
+}
+
+
+document.getElementById(et).innerHTML = document.getElementById(et).innerHTML + res;
+
+}
+
+
+
+var fruits, text, fLen, i;
+
+fruits = ["Banana", "Orange", "Apple", "Mango","Fresa",10,2,9];
+fLen = fruits.length;
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+    text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+document.getElementById("listas").innerHTML = text;
+</script>
+
+
+
+
+</script>
+
+</body>
+</html>

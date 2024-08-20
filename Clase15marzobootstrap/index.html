@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+		<title>Bootstrap</title>
+
+		<style>
+		  /* Make the image fully responsive */
+		  .carousel-inner img {
+		      width: 100%;
+		      height: 100%;
+		  }
+
+		  .img{
+		  	justify-content: center;
+		  	text-align: center;
+		  }
+		  </style>
+	</head>
+	<div class="container-fluid">
+	<body>
+		<h1>Perfil</h1>
+		<div class="card">
+		  <div class="card-body">Fotografia</div>
+		  	<img class="img" src="http://static.alfabetajuega.com/abj_public_files/multimedia/imagenes/201606/152480.alfabetajuega-world-of-warcraft-legion-illidan-110616.png" alt="Illidan" width="400">
+		  </div>
+		
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <!-- Brand -->
+		  <a class="navbar-brand" href="#">Home</a>
+
+		  <!-- Links -->
+		  <ul class="navbar-nav">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Perfil</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Seguridad</a>
+		    </li>
+
+		    <!-- Dropdown -->
+		    <li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+		        Categorias
+		      </a>
+		      <div class="dropdown-menu">
+		        <a class="dropdown-item" href="#">:v</a>
+		        <a class="dropdown-item" href="#">XD</a>
+		        <a class="dropdown-item" href="#">V A P O R W A V E</a>
+		      </div>
+		    </li>
+		  </ul>
+		</nav>
+
+		<div id="demo" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#demo" data-slide-to="0" class="active"></li>
+		    <li data-target="#demo" data-slide-to="1"></li>
+		    <li data-target="#demo" data-slide-to="2"></li>
+		  </ul>
+		  
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="https://k40.kn3.net/091BE6770.jpg" width="1100" height="500">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://k37.kn3.net/8D291C8F9.jpg" alt="Chicago" width="1100" height="500">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="https://i.pinimg.com/originals/4c/c9/02/4cc902d6635904f829c06d7843fb513f.jpg" alt="New York" width="1100" height="500">
+		    </div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
+		<form action="/action_page.php">
+		  <div class="form-group row">
+		    <label for="usr" class="col-sm-1">Nombre:</label>
+		    <input type="text" class="form-control col-sm-4" id="email" placeholder="Digite Nombre">
+		    <p class="bg-primary text-white col-sm-5">This text is important.</p>
+		  </div>
+		  <div class="form-group row">
+		    <label for="usr" class="col-sm-1">Ciudad:</label>
+		    <input type="text" class="form-control col-sm-4" id="usr" placeholder="Digite Ciudad">
+		    <p class="bg-success text-white col-sm-5">This text indicates success.</p>
+		  </div>
+
+		  <div class="form-group row">
+		    <label for="usr" class="col-sm-1">Telefono:</label>
+		    <input type="text" class="form-control col-sm-4" id="usr" placeholder="Digite Telefono">
+		    <p class="bg-info text-white col-sm-5">This text represents some information.</p>
+		  </div>
+		  <div class="form-group row">
+		    <label for="email" class="col-sm-1">Email:</label>
+		    <input type="email" class="form-control col-sm-4" id="usr" placeholder="Digite Correo Electronico">
+		    <p class="bg-warning text-white col-sm-5">This text represents a warning.</p>
+		  </div>
+
+
+		<div class="form-group row">
+		  <label for="sel1" class="col-sm-1">Ciudad:</label>
+		  <select class="form-control col-sm-4" id="sel1">
+		    <option>Valledupar</option>
+		    <option>Barranquilla</option>
+		    <option>Cartagena</option>
+		    <option>Bogotá</option>
+		  </select>
+		  <p class="bg-light text-dark col-sm-5">Light grey background color.</p>
+		</div>
+
+
+		  <div class="form-group row">
+		    <label for="pwd" class="col-sm-1">Password:</label>
+		   <input type="password" class="form-control col-sm-4" id="usr" placeholder="Escriba Contraseña" >
+		    <p class="bg-danger text-white col-sm-5">This text represents danger.</p>
+		  </div>
+		  <div class="form-check col-sm-5">
+		    <label class="form-check-label">
+		      <input class="form-check-input" type="checkbox"> Remember me
+		    </label>
+		    <p class="bg-secondary text-white">Secondary background color.</p>
+		  </div>
+		 <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	
+
+</div>
+
+		
+
+		<div class="container">
+		  <h2>Centered Modal Example</h2>
+		  <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
+		  <!-- Button to Open the Modal -->
+		  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+		    Open modal
+		  </button>
+
+		  <!-- The Modal -->
+		  <div class="modal fade" id="myModal">
+		    <div class="modal-dialog modal-dialog-centered">
+		      <div class="modal-content">
+		      
+		        <!-- Modal Header -->
+		        <div class="modal-header">
+		          <h4 class="modal-title">Modal Heading</h4>
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+		        
+		        <!-- Modal body -->
+		        <div class="modal-body">
+		        	<h3>INICIO DE SESIOn</h3>
+		        	<label for="usr" class="col-sm-1">Usuario:</label>
+		   	 		<input type="text" class="form-control col-sm-4" id="usr" placeholder="Digite usuario">
+		   	 		<label for="usr" class="col-sm-1">Contraseña:</label>
+		   	 		<input type="password" class="form-control col-sm-4" id="usr" placeholder="Digite contraseña">
+
+		        	<button type="button" class="close">Iniciar sesion</button>
+		        </div>
+		        
+		        <!-- Modal footer -->
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        </div>
+		        
+		      </div>
+		    </div>
+		  </div>
+		  
+		
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</body>
+	</div>
+</html>
